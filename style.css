@@ -1,0 +1,43 @@
+body {
+    background-color: #eee;
+}
+
+* {
+    font-family: "Fira Code", monospace;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    max-width: 75%;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+label {
+    width: 25%;
+    margin-right: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input[type="text"],
+input[type="file"] {
+    flex-grow: 1;
+    width: 75%;
+    font-family: inherit;
+}
+
+.delete {
+    text-decoration: line-through;
+    color: #d00;
+}
+
+.replacement {
+    color: #0d0;
+}
