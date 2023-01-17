@@ -1,3 +1,5 @@
+
+window.addEventListener("load", function () {
 const searchTermInput = document.getElementById("search-term");
 const replacementTermInput = document.getElementById("replacement-term");
 const filesInput = document.getElementById("files");
@@ -47,3 +49,4 @@ const updateModifiedSentences = () => {
 searchTermInput.addEventListener("input", updateModifiedSentences);
 replacementTermInput.addEventListener("input", updateModifiedSentences);
 filesInput.addEventListener("change", updateModifiedSentences);
+});
